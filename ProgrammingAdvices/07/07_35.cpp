@@ -43,9 +43,11 @@ void PrintString(string S1) {
     if (sWord != "") {
       cout << sWord << endl;
     }
+
     S1.erase(
         0, pos + delim.length()); // Erase() until position & move to next word.
   }
+
   if (S1 != "") {
     cout << S1 << endl; // Print last word of the string.
   }

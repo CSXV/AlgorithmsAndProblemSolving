@@ -23,12 +23,13 @@ void StringLetters(string word) {
   cout << "First letter of this string is:\n";
 
   for (short i = 0; i < word.length(); i++) {
-    // char variable, just to debug easely.
+    // char variable, just to debug easelly.
     char C = word[i];
+
     if (C != ' ' && isFirstLetter) {
       cout << C << endl;
     }
-    // if the cart that i am in is space?
+    // is the cart that i am in is space?
     // if YES, (isFirstLetter) = true.
     // if NO, then (isFirstLetter) return false.
     isFirstLetter = (C == ' ' ? true : false);

@@ -10,10 +10,12 @@ void signature() {
 
 int readPnumber(string message) {
   int number;
+
   do {
     cout << message;
     cin >> number;
   } while (number < 0);
+
   return number;
 }
 
@@ -23,6 +25,7 @@ void printpattern(int N) {
     for (int j = 65; j <= i; j++) {
       cout << i;
     }
+
     cout << "\n";
   }
 }
@@ -39,6 +42,7 @@ void printpattern(int N) {
 
 int main() {
   printpattern(readPnumber("Please enter an number: "));
+
   signature();
   return 0;
 }

@@ -35,6 +35,7 @@ short CountChart(string S1, char C1) {
       counter++;
     }
   }
+
   return counter;
 }
 

@@ -41,12 +41,15 @@ vector<string> splitString(string S1, string delim) {
     if (sWord != "") {
       vString.push_back(sWord);
     }
+
     S1.erase(
         0, pos + delim.length()); // Erase() until position & move to next word.
   }
+
   if (S1 != "") {
     vString.push_back(S1);
   }
+
   return vString;
 }
 
@@ -82,6 +85,7 @@ vector<stClientData> ReadRecord(string FileName) {
 
     MyFile.close();
   }
+
   return vClients;
 }
 
@@ -101,9 +105,11 @@ bool FindClientByAccountNumber(string AccNum, stClientData &Client) {
   for (stClientData C : vClients) {
     if (C.AccountNumber == AccNum) {
       Client = C;
+
       return true;
     }
   }
+
   return false;
 }
 

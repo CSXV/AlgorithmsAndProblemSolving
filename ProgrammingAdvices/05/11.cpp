@@ -10,10 +10,12 @@ void signature() {
 
 int readPnumber(string message) {
   int number;
+
   do {
     cout << message;
     cin >> number;
   } while (number < 0);
+
   return number;
 }
 
@@ -23,8 +25,10 @@ int reversedDigits(int N) {
   while (N > 0) {
     r = N % 10;
     N = N / 10;
+
     N2 = N2 * 10 + r;
   }
+
   return N2;
 }
 

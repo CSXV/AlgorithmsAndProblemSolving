@@ -34,12 +34,15 @@ vector<string> splitString(string S1, string delim) {
     if (sWord != "") {
       vString.push_back(sWord);
     }
+
     S1.erase(
         0, pos + delim.length()); // Erase() until position & move to next word.
   }
+
   if (S1 != "") {
     vString.push_back(S1);
   }
+
   return vString;
 }
 
@@ -75,6 +78,7 @@ vector<stClientData> ReadRecord(string FileName) {
 
     MyFile.close();
   }
+
   return vClients;
 }
 
@@ -100,6 +104,7 @@ void PrintHeader(vector<stClientData> vClients, string Sprt) {
   cout << Sprt << left << setw(40) << "Client Name";
   cout << Sprt << left << setw(12) << "Phone";
   cout << Sprt << left << setw(12) << "Balance";
+
   SeparatLine();
 }
 

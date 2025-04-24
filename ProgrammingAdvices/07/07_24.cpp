@@ -28,14 +28,17 @@ string StringLetters(string word) {
     if (word[i] != ' ' && isFirstLetter) {
       word[i] = char(toupper(word[i]));
     }
+
     isFirstLetter = (word[i] == ' ' ? true : false);
   }
+
   return word;
 }
 
 int main() {
   string S1 = ReadString("Please enter your string: ");
   StringLetters(S1);
+
   cout << S1 << endl;
 
   signature();

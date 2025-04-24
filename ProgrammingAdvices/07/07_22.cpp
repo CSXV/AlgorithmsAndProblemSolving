@@ -10,13 +10,16 @@ void signature() {
 
 short ReadPNumber(string message) {
   short N;
+
   cout << message;
   cin >> N;
+
   return N;
 }
 
 void CalculateFibinacci(short N, short p1, short p2) {
   short Feb = 0;
+
   if (N > 0) {
     Feb = p1 + p2;
     p2 = p1;

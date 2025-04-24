@@ -19,11 +19,13 @@ string ReadString(string message) {
 
 string RemovePunctuationsFromString(string S1) {
   string S2 = "";
+
   for (short i = 0; i < S1.length(); i++) {
     if (!ispunct(S1[i])) {
       S2 += S1[i];
     }
   }
+
   return S2;
 }
 

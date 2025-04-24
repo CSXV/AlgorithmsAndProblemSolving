@@ -24,6 +24,7 @@ char CheckCart(char S1) {
 
 int main() {
   char S1 = ReadString("Please enter your string: ");
+
   cout << "\nChar after inverting case: ";
   CheckCart(S1);
 

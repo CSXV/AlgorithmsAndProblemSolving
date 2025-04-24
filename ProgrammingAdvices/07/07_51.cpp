@@ -45,12 +45,15 @@ vector<string> splitString(string S1, string delim) {
     if (sWord != "") {
       vString.push_back(sWord);
     }
+
     S1.erase(
         0, pos + delim.length()); // Erase() until position & move to next word.
   }
+
   if (S1 != "") {
     vString.push_back(S1);
   }
+
   return vString;
 }
 
@@ -98,6 +101,7 @@ vector<stClientData> ReadRecord(string FileName) {
 
     MyFile.close();
   }
+
   return vClients;
 }
 
@@ -113,13 +117,14 @@ void PrintData(stClientData Client) {
 
 bool FindClientByAccountNumber(string AccNum, vector<stClientData> vClients,
                                stClientData &Client) {
-
   for (stClientData C : vClients) {
     if (C.AccountNumber == AccNum) {
       Client = C;
+
       return true;
     }
   }
+
   return false;
 }
 
@@ -128,9 +133,11 @@ bool MarkClientForUpdateByAccountNumber(string AccNum,
   for (stClientData &C : vClients) {
     if (C.AccountNumber == AccNum) {
       C.MarkforDelete = true;
+
       return true;
     }
   }
+
   return false;
 }
 
@@ -142,10 +149,13 @@ stClientData ChangeClientRecord(string AccNum) {
   // Usage of std::ws will extract all the whitespace characters.
   cout << "Enter Pin Code: ";
   getline(cin >> ws, Client.PinCode);
+
   cout << "Enter the name: ";
   getline(cin, Client.Name);
+
   cout << "Enter Phone number: ";
   getline(cin, Client.Phone);
+
   cout << "Enter account Balance: ";
   cin >> Client.AccountBalance;
 
@@ -167,14 +177,15 @@ vector<stClientData> SaveClientDataToFile(string ClientsFileName,
         MyFile << DataLine << endl;
       }
     }
+
     MyFile.close();
   }
+
   return vClients;
 }
 
 void PrintAllClientsData(string AccNum, vector<stClientData> vClients,
                          stClientData Client) {
-
   if (FindClientByAccountNumber(AccNum, vClients, Client)) {
     PrintData(Client);
   } else {
@@ -192,6 +203,7 @@ bool UpdateClientByAccountNumber(string AccNum,
 
     cout << "\n\nAre you sure you want to update this client? (Y/N): ";
     cin >> Answer;
+
     // using for loop to put CLIENT data in C.
     if (toupper(Answer) == 'Y') {
       // using & reference, to edit CLIENT in vector.
@@ -209,6 +221,7 @@ bool UpdateClientByAccountNumber(string AccNum,
     }
   } else {
     cout << "\nClient with account number (" << AccNum << ") not found!";
+
     return false;
   }
 }

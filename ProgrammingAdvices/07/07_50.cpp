@@ -44,12 +44,15 @@ vector<string> splitString(string S1, string delim) {
     if (sWord != "") {
       vString.push_back(sWord);
     }
+
     S1.erase(
         0, pos + delim.length()); // Erase() until position & move to next word.
   }
+
   if (S1 != "") {
     vString.push_back(S1);
   }
+
   return vString;
 }
 
@@ -97,6 +100,7 @@ vector<stClientData> ReadRecord(string FileName) {
 
     MyFile.close();
   }
+
   return vClients;
 }
 
@@ -112,13 +116,14 @@ void PrintData(stClientData Client) {
 
 bool FindClientByAccountNumber(string AccNum, vector<stClientData> vClients,
                                stClientData &Client) {
-
   for (stClientData C : vClients) {
     if (C.AccountNumber == AccNum) {
       Client = C;
+
       return true;
     }
   }
+
   return false;
 }
 
@@ -127,9 +132,11 @@ bool MarkClientForDeleteByAccountNumber(string AccNum,
   for (stClientData &C : vClients) {
     if (C.AccountNumber == AccNum) {
       C.MarkforDelete = true;
+
       return true;
     }
   }
+
   return false;
 }
 
@@ -148,14 +155,15 @@ vector<stClientData> SaveClientDataToFile(string ClientsFileName,
         MyFile << DataLine << endl;
       }
     }
+
     MyFile.close();
   }
+
   return vClients;
 }
 
 void PrintAllClientsData(string AccNum, vector<stClientData> vClients,
                          stClientData Client) {
-
   if (FindClientByAccountNumber(AccNum, vClients, Client)) {
     PrintData(Client);
   } else {
@@ -181,9 +189,11 @@ bool DeleteClientByAccountNumber(string AccNum,
       // Refresh Data.
       vClients = ReadRecord(ClientsFileName);
       cout << "\nClient deleted successfuly.";
+
       return true;
     }
   }
+
   return false;
 }
 

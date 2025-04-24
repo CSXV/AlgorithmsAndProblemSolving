@@ -13,8 +13,10 @@ enum enPrime { Prime = 1, NotPrime = 2 };
 
 int readnumber(string message) {
   int number;
+
   cout << message;
   cin >> number;
+
   return number;
 }
 
@@ -25,12 +27,14 @@ enPrime CheckPrime(int N) {
     if (N % c == 0)
       return enPrime::NotPrime;
   }
+
   return enPrime::Prime;
 }
 
 void PrintResults(int N) {
   cout << "\n"
        << "Prime numbers from " << 1 << " to " << N << " are: " << endl;
+
   for (int i = 1; i <= N; i++) {
     if (CheckPrime(i) == enPrime::Prime) {
       cout << i << endl;
@@ -40,6 +44,7 @@ void PrintResults(int N) {
 
 int main() {
   PrintResults(readnumber("Please enter an number: "));
+
   signature();
   return 0;
 }

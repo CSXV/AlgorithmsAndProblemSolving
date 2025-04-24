@@ -24,31 +24,39 @@ short CountLetters(string S1, enWhatToCount WhatToCount = enWhatToCount::All) {
   if (WhatToCount == enWhatToCount::All) {
     return S1.length();
   }
+
   short Counter = 0;
+
   for (short i = 0; i < S1.length(); i++) {
     if (WhatToCount == enWhatToCount::CapitalLetters && isupper(S1[i]))
       Counter++;
+
     if (WhatToCount == enWhatToCount::SmallLetters && islower(S1[i]))
       Counter++;
   }
+
   return Counter;
 }
 
 short CountCapitalLetters(string S1) {
   short Counter = 0;
+
   for (short i = 0; i < S1.length(); i++) {
     if (isupper(S1[i]))
       Counter++;
   }
+
   return Counter;
 }
 
 short CountSmallLetters(string S1) {
   short Counter = 0;
+
   for (short i = 0; i < S1.length(); i++) {
     if (islower(S1[i]))
       Counter++;
   }
+
   return Counter;
 }
 

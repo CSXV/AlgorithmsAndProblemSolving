@@ -22,12 +22,16 @@ stClientData ReadClientData() {
 
   cout << "Enter Account Number: ";
   getline(cin, Client.AccountNumber);
+
   cout << "Enter Pin Code: ";
   getline(cin, Client.PinCode);
+
   cout << "Enter the name: ";
   getline(cin, Client.Name);
+
   cout << "Enter Phone number: ";
   getline(cin, Client.Phone);
+
   cout << "Enter account Balance: ";
   cin >> Client.AccountBalance;
 

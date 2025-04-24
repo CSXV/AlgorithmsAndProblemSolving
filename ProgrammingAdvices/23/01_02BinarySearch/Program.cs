@@ -1,5 +1,4 @@
 ﻿using System;
-
 // 02 - Binary search
 
 public class Program {

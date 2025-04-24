@@ -1,5 +1,4 @@
 ﻿using System;
-
 // 01 Linear search
 
 public class Program {

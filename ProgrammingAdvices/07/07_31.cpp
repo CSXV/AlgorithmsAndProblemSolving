@@ -47,6 +47,7 @@ short CountChartMatch(string S1, char C1, bool MatchCase = true) {
       }
     }
   }
+
   return counter;
 }
 

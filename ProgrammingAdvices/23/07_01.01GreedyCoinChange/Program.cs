@@ -1,5 +1,5 @@
 ﻿// calculate the number of coins from amount and what coin is paid of.
-//
+
 // if i paid $67 with $100 coin, i will receive one $20, one $10, and three $1
 // as a total of 5 coins.
 
@@ -78,6 +78,7 @@ public class Program {
 
     Console.WriteLine("------------------------------------");
     List<int> list = Greedy(amount, coin);
+
     Print(list);
     Console.WriteLine("------------------------------------");
 

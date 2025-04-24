@@ -27,6 +27,7 @@ bool checkperfect(int N) {
       sum += i;
     }
   }
+
   return N == sum; // Is N == Sum? if yes return true, if no return false.
 }
 
@@ -39,6 +40,7 @@ void PrintResults(int N) {
 
 int main() {
   PrintResults(readnumber("Please enter an number: "));
+
   signature();
   return 0;
 }

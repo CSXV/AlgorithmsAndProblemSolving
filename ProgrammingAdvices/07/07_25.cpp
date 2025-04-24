@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-// Read an string, then upper first letters of each word, then print it.
+// Read an string, then lower first letters of each word, then print it.
 
 void signature() {
   cout << "\n┏┓╻┏━╸╻ ╻┏━╸┏━┓   ┏━┓┏━╸╺┳╸╺┳╸╻  ┏━╸"
@@ -27,8 +27,10 @@ string StringLetters(string word) {
     if (word[i] != ' ' && isFirstLetter) {
       word[i] = char(tolower(word[i]));
     }
+
     isFirstLetter = (word[i] == ' ' ? true : false);
   }
+
   return word;
 }
 

@@ -1,9 +1,10 @@
 ﻿// calculate the number of coins from amount and what coin is paid of.
-//
+
 // if i paid $67 with $100 coin, i will receive one $20, one $10, and three $1
 // as a total of 5 coins.
 
 public class Program {
+
   public static List<int> Greedy(int amount, int coin, List<int> coins) {
     List<int> results = new List<int>();
 
@@ -14,7 +15,7 @@ public class Program {
     int change = coin - amount;
     Console.WriteLine($"change = {change}");
 
-    foreach (int c in coins) {
+    foreach (int c in coi ns) {
       while (change >= c) {
         results.Add(c);
         change -= c;
@@ -43,8 +44,10 @@ public class Program {
 
     Console.WriteLine("------------------------------------");
     List<int> list = Greedy(amount, coin, coins);
+
     Console.WriteLine($"Total  = {list.Count}");
     Console.WriteLine("---------------------");
+
     Print(list);
     Console.WriteLine("------------------------------------");
 

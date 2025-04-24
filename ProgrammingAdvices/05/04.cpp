@@ -10,19 +10,23 @@ void signature() {
 
 int readPnumber(string message) {
   int number;
+
   do {
     cout << message;
     cin >> number;
   } while (number < 0);
+
   return number;
 }
 
 bool isperfectnumber(int number) {
   int sum = 0;
+
   for (int i = 1; i < number; i++) {
     if (number % i == 0)
       sum += i;
   }
+
   return number == sum;
 }
 
@@ -36,6 +40,7 @@ void Printresults(int number) {
 
 int main() {
   Printresults(readPnumber("Please enter a positive number: "));
+
   signature();
   return 0;
 }

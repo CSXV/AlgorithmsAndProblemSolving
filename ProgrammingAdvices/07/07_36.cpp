@@ -27,15 +27,18 @@ short CountWords(string S1) {
   // Use find() function to get the position of the delimiters.
   while ((pos = S1.find(delim)) != std::string::npos) {
     sWord = S1.substr(0, pos); // Store the word.
+
     if (sWord != "") {
       counter++;
     }
-    S1.erase(
-        0, pos + delim.length()); // Erase() until position & move to next word.
+    // Erase() until position & move to next word.
+    S1.erase(0, pos + delim.length());
   }
+
   if (S1 != "") {
     counter++;
   }
+
   return counter;
 }
 
@@ -46,6 +49,7 @@ void PrintResults(string message, string S1) {
 
 int main() {
   string S1 = ReadString("Please enter your string: ");
+
   CountWords(S1);
   PrintResults("the number of words in your string is: ", S1);
 

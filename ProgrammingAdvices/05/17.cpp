@@ -10,8 +10,10 @@ void signature() {
 
 string readletters(string message) {
   string N;
+
   cout << message;
   cin >> N;
+
   return N;
 }
 
@@ -35,16 +37,20 @@ bool printpattern(string n) {
           cout << "\nFound after " << c << " trial(s).\n";
           return true;
         }
+
         word = "";
       }
     }
+
     cout << "\n**********\n";
   }
+
   return false;
 }
 
 int main() {
   printpattern(readletters("Please enter a three CAPTIAL Letters password: "));
+
   signature();
   return 0;
 }

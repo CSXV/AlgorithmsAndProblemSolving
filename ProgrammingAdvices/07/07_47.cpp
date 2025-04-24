@@ -27,12 +27,16 @@ stClientData ReadClientData() {
   // Usage of std::ws will extract all the whitespace characters.
   cout << "Enter Account Number: ";
   getline(cin >> ws, Client.AccountNumber);
+
   cout << "Enter Pin Code: ";
   getline(cin, Client.PinCode);
+
   cout << "Enter the name: ";
   getline(cin, Client.Name);
+
   cout << "Enter Phone number: ";
   getline(cin, Client.Phone);
+
   cout << "Enter account Balance: ";
   cin >> Client.AccountBalance;
 
@@ -64,6 +68,7 @@ void AppendRecord(string FileName, string stDataLine) {
 
 void AddNewClient() {
   stClientData Client = ReadClientData();
+
   AppendRecord(ClientsFileName, JoinClientData(Client));
 }
 

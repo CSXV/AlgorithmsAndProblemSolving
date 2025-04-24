@@ -10,10 +10,12 @@ void signature() {
 
 int readPnumber(string message) {
   int number;
+
   do {
     cout << message;
     cin >> number;
   } while (number < 0);
+
   return number;
 }
 
@@ -28,14 +30,17 @@ int countdifitreq(short D, int N) {
       f++;
     }
   }
+
   return f;
 }
 
 void printDigitFreq(int N) {
   cout << endl;
+
   for (int i = 0; i < 10; i++) { // OR (i <= 09), We have digits from 01-09.
     short D = 0;
     D = countdifitreq(i, N);
+
     if (D > 0) { // To not print digits that have 00 Frequency.
       cout << "Digit " << i << " Frequency is: " << D << " Time(s).\n";
     }
@@ -45,6 +50,7 @@ void printDigitFreq(int N) {
 int main() {
   int N = readPnumber("Please enter an number: ");
   printDigitFreq(N);
+
   signature();
   return 0;
 }
