@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1HfBdy4zw2eP92c6KCIImwyx1PUsejEOszI2gcR1350NLZOteY1pjj2WxgjrJVRBwiWFRSEcPfEdR6sEyEYe3g==",
+  "success": true,
+  "projectFilePath": "/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/PlayGroundConsole.csproj",
+  "expectedPackageFiles": [
+    "/home/user/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
