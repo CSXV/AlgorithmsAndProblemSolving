@@ -1,0 +1,14 @@
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/bin/Debug/net8.0/PlayGroundConsole
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/bin/Debug/net8.0/PlayGroundConsole.deps.json
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/bin/Debug/net8.0/PlayGroundConsole.runtimeconfig.json
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/bin/Debug/net8.0/PlayGroundConsole.dll
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/bin/Debug/net8.0/PlayGroundConsole.pdb
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/obj/Debug/net8.0/PlayGroundConsole.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/obj/Debug/net8.0/PlayGroundConsole.AssemblyInfoInputs.cache
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/obj/Debug/net8.0/PlayGroundConsole.AssemblyInfo.cs
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/obj/Debug/net8.0/PlayGroundConsole.csproj.CoreCompileInputs.cache
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/obj/Debug/net8.0/PlayGroundConsole.dll
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/obj/Debug/net8.0/refint/PlayGroundConsole.dll
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/obj/Debug/net8.0/PlayGroundConsole.pdb
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/obj/Debug/net8.0/PlayGroundConsole.genruntimeconfig.cache
+/mnt/MalikDisk/MALIK_DISC/MX/Coding/DotNet/PlayGroundConsole/obj/Debug/net8.0/ref/PlayGroundConsole.dll
