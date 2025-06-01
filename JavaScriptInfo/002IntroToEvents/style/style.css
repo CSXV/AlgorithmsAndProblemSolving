@@ -1,0 +1,22 @@
+#menu-div ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 20px;
+  display: none;
+}
+
+#menu-div #menu-head {
+  cursor: pointer;
+}
+
+#menu-div #menu-head::before {
+  content: "▶ ";
+}
+
+#menu-div.open #menu-head::before {
+  content: "▼ ";
+}
+
+#menu-div.open ul {
+  display: block;
+}
