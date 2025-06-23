@@ -1,11 +1,14 @@
 #include <iostream>
 using namespace std;
+
 // Validate age between 18 and 45.
 
 int readage() {
   int age;
+
   cout << "Please enter you age: ";
   cin >> age;
+
   return age;
 }
 
@@ -22,5 +25,6 @@ void printresults(int age) {
 
 int main() {
   printresults(readage());
+
   return 0;
 }

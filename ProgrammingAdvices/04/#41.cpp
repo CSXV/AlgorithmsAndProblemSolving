@@ -10,10 +10,12 @@ void signature() {
 
 float readPnumber(string message) {
   float number = 0;
+
   do {
     cout << message;
     cin >> number;
   } while (number <= 0);
+
   return number;
 }
 
@@ -35,7 +37,9 @@ int main() {
   float Hours = readPnumber("Please enter number of hours: ");
   float Days = HoursToDays(Hours);
   float Weeks = DaysToWeeks(Days);
+
   printResults(Days, Hours, Weeks);
+
   signature();
   return 0;
 }

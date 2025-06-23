@@ -1,7 +1,8 @@
 #include <iostream>
-#include <ostream>
 using namespace std;
-//Check if have a driving license, and a valid age.
+
+// Check if have a driving license, and a valid age.
+
 struct StInfo {
   int Age;
   bool DrLi;
@@ -9,8 +10,10 @@ struct StInfo {
 
 StInfo ReadInfo() {
   StInfo Driver;
+
   cout << "Please enter you age: ";
   cin >> Driver.Age;
+
   cout << "Do you have a driving license?\n(0) No, (1) Yes: ";
   cin >> Driver.DrLi;
 
@@ -28,5 +31,6 @@ void PrintResult(StInfo Driver) {
 
 int main() {
   PrintResult(ReadInfo());
+
   return 0;
 }

@@ -15,10 +15,12 @@ struct stTaskDuration {
 
 int readPnumber(string message) {
   float number = 0;
+
   do {
     cout << message;
     cin >> number;
   } while (number <= 0);
+
   return number;
 }
 
@@ -55,7 +57,9 @@ void PrintResults(stTaskDuration TaskDuration) {
 
 int main() {
   int TotalSeconds = readPnumber("Please enter number of seconds: ");
+
   PrintResults(SecondsToDuration(TotalSeconds));
+
   signature();
   return 0;
 }

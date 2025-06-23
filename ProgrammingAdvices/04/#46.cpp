@@ -16,6 +16,7 @@ void printresults() {
 
 int main() {
   printresults();
+
   signature();
   return 0;
 }

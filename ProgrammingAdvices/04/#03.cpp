@@ -1,7 +1,8 @@
 #include <iostream>
-#include <ostream>
 using namespace std;
-//Check odd or even number.
+
+// Check odd or even number.
+
 enum enNum { even = 1, odd = 2 };
 
 int ReadNum() {
@@ -32,5 +33,6 @@ void PrintNum(enNum NumType) {
 
 int main() {
   PrintNum(ChNu(ReadNum()));
+
   return 0;
 }

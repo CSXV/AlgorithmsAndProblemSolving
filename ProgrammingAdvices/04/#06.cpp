@@ -2,16 +2,20 @@
 #include <ostream>
 #include <string>
 using namespace std;
-//Print full name.
+
+// Print full name.
+
 struct stInfo {
   string FirstName;
   string LastName;
 };
 
 stInfo ReadInfo() {
-  stInfo Info; 
+  stInfo Info;
+
   cout << "Please enter your First name: ";
   cin >> Info.FirstName;
+
   cout << "Please enter you last name: ";
   cin >> Info.LastName;
 
@@ -19,11 +23,13 @@ stInfo ReadInfo() {
 }
 
 string FullName(stInfo Info, bool reversed) {
-  string FullName=" ";
-  if(reversed)
-  FullName= Info.LastName+ ", " + Info.FirstName;
+  string FullName = " ";
+
+  if (reversed)
+    FullName = Info.LastName + ", " + Info.FirstName;
   else
-  FullName= Info.FirstName + " " + Info.LastName;
+    FullName = Info.FirstName + " " + Info.LastName;
+
   return FullName;
 }
 
@@ -32,6 +38,7 @@ void PrintName(string FullName) {
 }
 
 int main() {
-  PrintName(FullName(ReadInfo(), false)); 
+  PrintName(FullName(ReadInfo(), false));
+
   return 0;
 }

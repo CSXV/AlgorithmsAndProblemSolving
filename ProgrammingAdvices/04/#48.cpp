@@ -11,6 +11,7 @@ void signature() {
 
 float ReadNumber(string message) {
   float Number;
+
   do {
     cout << message;
     cin >> Number;
@@ -32,7 +33,9 @@ int main() {
   float LoanAmount = ReadNumber("Please enter loan Amount: ");
   float Months =
       ReadNumber("Please enter how many months you need to settle the loan: ");
+
   PrintResults(LoanAmount, Months);
+
   signature();
   return 0;
 }

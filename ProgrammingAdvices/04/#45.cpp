@@ -26,6 +26,7 @@ enum enMonths {
 
 int ReadNumberInRage(string message, int from, int to) {
   int number = 0;
+
   do {
     cout << message << endl;
     cin >> number;
@@ -72,6 +73,7 @@ string GetMonth(enMonths Day) {
 
 int main() {
   cout << GetMonth(ReadDay());
+
   signature();
   return 0;
 }

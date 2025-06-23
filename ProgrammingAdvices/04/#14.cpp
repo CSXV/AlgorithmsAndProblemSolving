@@ -1,20 +1,22 @@
 #include <iostream>
-#include <ostream>
-#include <string>
 using namespace std;
-//Read two numbers then print them and the swap of.
-void readnumbers(int& num1, int& num2) {
+
+// Read two numbers then print them and the swap of.
+
+void readnumbers(int &num1, int &num2) {
   cout << "Please enter the first number: ";
   cin >> num1;
+
   cout << "Please enter the second number: ";
   cin >> num2;
 }
 
-void swapnumbers(int& a, int& b) {
+void swapnumbers(int &a, int &b) {
   int temp;
-  temp=a;
-  a=b;
-  b=temp;
+
+  temp = a;
+  a = b;
+  b = temp;
 }
 
 void printresults(int num1, int num2) {
@@ -24,9 +26,12 @@ void printresults(int num1, int num2) {
 
 int main() {
   int num1, num2;
+
   readnumbers(num1, num2);
   printresults(num1, num2);
+
   swap(num1, num2);
   printresults(num1, num2);
+
   return 0;
 }

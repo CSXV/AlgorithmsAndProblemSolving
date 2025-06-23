@@ -1,13 +1,16 @@
 #include <iostream>
 using namespace std;
+
 // Check if mark is >= 50 and <= 100.
 
 enum enPassFail { Pass = 1, Fail = 2 };
 
 int ReadMark() {
   int mark;
+
   cout << "Please enter a mark: ";
   cin >> mark;
+
   return mark;
 }
 enPassFail CheckMark(int mark) {
@@ -26,5 +29,6 @@ void printResults(int mark) {
 
 int main() {
   printResults(ReadMark());
+
   return 0;
 }

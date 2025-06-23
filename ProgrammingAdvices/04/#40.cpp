@@ -10,8 +10,10 @@ void signature() {
 
 float readnumber(string message) {
   float number;
+
   cout << message;
   cin >> number;
+
   return number;
 }
 
@@ -32,7 +34,9 @@ void printresults(float bill) {
 
 int main() {
   float bill = readnumber("Please enter the total bill: ");
+
   printresults(bill);
+
   signature();
   return 0;
 }

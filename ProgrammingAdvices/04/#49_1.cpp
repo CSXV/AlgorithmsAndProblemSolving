@@ -31,6 +31,7 @@ void PrintResults(int Balance) {
 
 int main() {
   PrintResults(CheckPIN());
+
   signature();
   return 0;
 }

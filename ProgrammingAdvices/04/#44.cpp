@@ -21,6 +21,7 @@ enum enDays {
 
 int ReadNumberInRage(string message, int from, int to) {
   int number = 0;
+
   do {
     cout << message << endl;
     cin >> number;
@@ -57,6 +58,7 @@ string GetDayOfWeek(enDays Day) {
 
 int main() {
   cout << GetDayOfWeek(ReadDay()) << endl;
+
   signature();
   return 0;
 }

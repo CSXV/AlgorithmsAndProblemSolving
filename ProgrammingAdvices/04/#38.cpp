@@ -13,8 +13,10 @@ enum primeornot { prime = 1, notprime = 2 };
 
 float readnumber(string message) {
   int number;
+
   cout << message;
   cin >> number;
+
   return number;
 }
 
@@ -25,6 +27,7 @@ primeornot checknumber(int number) {
     if (number % C == 0)
       return primeornot::notprime;
   }
+
   return primeornot::prime;
 }
 
@@ -41,6 +44,7 @@ void printresult(int number) {
 
 int main() {
   printresult(readnumber("Please enter an number: "));
+
   signature();
   return 0;
 }

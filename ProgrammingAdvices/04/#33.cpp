@@ -1,6 +1,7 @@
 #include <iostream>
 #include <ostream>
 using namespace std;
+
 // Read an number and then print the grade letter for it.
 
 void segnature() {
@@ -9,6 +10,7 @@ void segnature() {
 
 int readrange(int from, int to) {
   int grade;
+
   do {
     cout << "\nPlease enter a grade between 00 and 100: ";
     cin >> grade;
@@ -35,7 +37,7 @@ char getgradeletter(int grade) {
 int main() {
   cout << endl
        << "Your results is: " << getgradeletter(readrange(0, 100)) << endl;
-  segnature();
 
+  segnature();
   return 0;
 }

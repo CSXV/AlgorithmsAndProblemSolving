@@ -1,14 +1,17 @@
 #include <iostream>
 #include <ostream>
 using namespace std;
+
 // Print the sum of odd numbers in an number, with three solutions.
 
 enum enOddEven { odd = 1, even = 2 };
 
 int readnumber() {
   int a;
+
   cout << "Please enter an number, to sum the EVEN numbers of it: ";
   cin >> a;
+
   return a; // return NUMBER.
 }
 
@@ -29,6 +32,7 @@ int forloop(int N) {
     if (cecknumber(c) == enOddEven::even) { // IF C=02 == 02 sum += c;
     }
   }
+
   return sum;
 }
 
@@ -43,6 +47,7 @@ int whileloop(int N) {
     if (cecknumber(c) == enOddEven::even)
       sum += c;
   }
+
   return sum;
 }
 
@@ -57,13 +62,16 @@ int dowhileloop(int N) {
       sum += c;
     }
   } while (c < N); // Not using (<=), because the (=) will add even number.
+  //
   return sum;
 }
 
 int main() {
   int N = readnumber();
+
   cout << forloop(N) << endl;
   cout << whileloop(N) << endl;
   cout << dowhileloop(N) << endl;
+
   return 0;
 }

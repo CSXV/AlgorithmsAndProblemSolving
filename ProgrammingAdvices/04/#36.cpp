@@ -12,15 +12,19 @@ enum enOperation { Add = '+', Subtract = '-', Mulitply = '*', Divid = '/' };
 
 float readnumber(string message) {
   float number = 0;
+
   cout << message;
   cin >> number;
+
   return number;
 }
 
 enOperation readoperatrion() {
   char OT = '+';
+
   cout << "Please choose an operation: (+), (-), (*), (/): ";
   cin >> OT;
+
   return (enOperation)OT;
 }
 
@@ -44,7 +48,9 @@ void printresults(float results) {
 int main() {
   float number1 = readnumber("Please enter the first number: ");
   float number2 = readnumber("Please enter the second number: ");
+
   enOperation operation = readoperatrion();
+
   cout << endl
        << "Results: " << CalOperation(number1, number2, operation) << endl;
 

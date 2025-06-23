@@ -11,14 +11,17 @@ void signature() {
 
 string ReadPIN() {
   string PIN;
+
   cout << "Please enter PIN:";
   cin >> PIN;
+
   return PIN;
 }
 
 bool login() {
   string PIN;
   int counter = 3;
+
   do {
     counter--;
     PIN = ReadPIN();
@@ -30,6 +33,7 @@ bool login() {
       cout << "\nWrong PIN, You have " << counter << " More tries." << endl;
     }
   } while (counter >= 1 && PIN != "1234");
+
   return 0; // When you reach here, this means login faild.
 }
 
@@ -40,6 +44,7 @@ int main() {
   } else {
     cout << "\nYour card is blocked, call the bank for help.";
   }
+
   signature();
   return 0;
 }

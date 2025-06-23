@@ -10,15 +10,19 @@ void signature() {
 
 string ReadPIN() {
   string PIN;
+
   cout << "Please enter PIN:";
   cin >> PIN;
+
   return PIN;
 }
 
 bool login() {
   string PIN;
+
   do {
     PIN = ReadPIN();
+
     if (PIN == "1234") {
       return 1; // This will exit the function and return 1.
     } else {
@@ -26,6 +30,7 @@ bool login() {
       system("color 4F"); // Turn the screen background Red.
     }
   } while (PIN != "1234");
+
   return 0;
 }
 
@@ -34,6 +39,7 @@ int main() {
     system("color 2F"); // Turn the screen background Green.
     cout << "\nYour account balance is: " << 7500 << '\n';
   }
+
   signature();
   return 0;
 }

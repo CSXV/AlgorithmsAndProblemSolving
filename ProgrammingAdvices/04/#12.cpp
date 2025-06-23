@@ -1,11 +1,13 @@
 #include <iostream>
 #include <ostream>
 using namespace std;
+
 // Print the maximum of two numbers.
 
 void readnumbers(int &num1, int &num2) {
   cout << "Please enter the first number: ";
   cin >> num1;
+
   cout << "Pleae enter the second number: ";
   cin >> num2;
 }

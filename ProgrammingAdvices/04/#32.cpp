@@ -1,19 +1,24 @@
 #include <iostream>
 using namespace std;
+
 // Calculate N power to an number.
 
 int readnumber() {
   int a;
+
   cout << "Print an number to the power of another number.\n";
   cout << "Please enter an Number: ";
   cin >> a;
+
   return a;
 }
 
 int readpower() {
   int b;
+
   cout << "Please enter the Power: ";
   cin >> b;
+
   return b;
 }
 

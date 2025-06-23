@@ -1,12 +1,14 @@
 #include <cmath>
 #include <iostream>
 using namespace std;
+
 // Calculate the area of the circle through dimeter.
 
 float readnumbers() {
   float a;
 
   cout << "Calculating the area of the circle through the diameter.\n\n";
+
   cout << "Please enter the diameter: ";
   cin >> a;
 
@@ -26,5 +28,6 @@ void printresults(float area) {
 
 int main() {
   printresults(calculatearea(readnumbers()));
+
   return 0;
 }

@@ -15,15 +15,18 @@ struct stTaskDuration {
 
 int readPnumber(string message) {
   float number = 0;
+
   do {
     cout << message;
     cin >> number;
   } while (number <= 0);
+
   return number;
 }
 
 stTaskDuration ReadTaskDuration() {
   stTaskDuration TaskDuration;
+
   TaskDuration.Days = readPnumber("Please enter number of Days: ");
   TaskDuration.Hours = readPnumber("Please enter number of Hours: ");
   TaskDuration.Minutes = readPnumber("Please enter number of Minutes: ");
@@ -34,6 +37,7 @@ stTaskDuration ReadTaskDuration() {
 
 int TaskDurationInSeconds(stTaskDuration TaskDuration) {
   int DurationInSeconds = 0;
+
   DurationInSeconds = TaskDuration.Days * 24 * 60 * 60;
   DurationInSeconds += TaskDuration.Hours * 60 * 60;
   DurationInSeconds += TaskDuration.Minutes * 60;
@@ -44,6 +48,7 @@ int TaskDurationInSeconds(stTaskDuration TaskDuration) {
 
 int main() {
   cout << TaskDurationInSeconds(ReadTaskDuration()) << endl;
+
   signature();
   return 0;
 }
