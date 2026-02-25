@@ -1,24 +1,20 @@
 #include <iostream>
-#include <ostream>
 using namespace std;
 
 // Calculating the factorial of a positive number.
 
-int readnumber(string message) {
+int ReadNumber(string message) {
   int a;
 
-  cout << "Print the factorial of an number (N!).\n";
-  // cout << "Please enter a positive one: "
-
   do {
-    cout << message << endl;
+    cout << message;
     cin >> a;
   } while (a < 0);
 
   return a;
 }
 
-int factorial(int N) {
+int Factorial(int N) {
   int sum = 1;
 
   for (int c = 1; c <= N; c++) {
@@ -29,7 +25,9 @@ int factorial(int N) {
 }
 
 int main() {
-  cout << factorial(readnumber("Please enter a positive one: ")) << endl;
+  cout << "Print the factorial of an number (N!).\n";
+
+  cout << Factorial(ReadNumber("Please enter a positive one: ")) << endl;
 
   return 0;
 }

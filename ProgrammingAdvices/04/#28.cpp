@@ -5,16 +5,16 @@ using namespace std;
 
 enum enOddEven { odd = 1, even = 2 };
 
-int readnumber() {
-  int a;
+int ReadAnNumber() {
+  int numberToRead;
 
-  cout << "Please enter an number, to sum the odd numbers of it: ";
-  cin >> a;
+  cout << "Please enter an number: ";
+  cin >> numberToRead;
 
-  return a;
+  return numberToRead;
 }
 
-enOddEven cecknumber(int N) {
+enOddEven CheckNumber(int N) {
   if (N % 2 != 0)
     return enOddEven::odd; // will return 01.
   else
@@ -27,8 +27,8 @@ int forloop(int N) {
 
   cout << "\nThe sum of odd numbers using for statement:\n";
 
-  for (int c = 1; c <= N; c++) {           // we will use (<=) with (=).
-    if (cecknumber(c) == enOddEven::odd) { // IF C=01 == 01
+  for (int c = 1; c <= N; c++) {            // we will use (<=) with (=).
+    if (CheckNumber(c) == enOddEven::odd) { // IF C=01 == 01
       sum += c;
     }
   }
@@ -44,7 +44,7 @@ int whileloop(int N) {
   while (c < N) { // Not using (<=), because the (=) will add even number.
 
     c++;
-    if (cecknumber(c) == enOddEven::odd)
+    if (CheckNumber(c) == enOddEven::odd)
       sum += c;
   }
 
@@ -58,7 +58,7 @@ int dowhileloop(int N) {
 
   do {
     c++;
-    if (cecknumber(c) == enOddEven::odd) {
+    if (CheckNumber(c) == enOddEven::odd) {
       sum += c;
     }
   } while (c < N); // Not using (<=), because the (=) will add even number.
@@ -67,7 +67,7 @@ int dowhileloop(int N) {
 }
 
 int main() {
-  int N = readnumber();
+  int N = ReadAnNumber();
 
   cout << forloop(N) << endl;
   cout << whileloop(N) << endl;

@@ -1,28 +1,19 @@
 #include <iostream>
-#include <ostream>
 using namespace std;
 
 // Print loop from an number to another number, with three Solutions.
 
-int readnumber() {
-  int a;
+int ReadAnNumber(string message) {
+  int numberToRead;
 
-  cout << "Please enter the floor: ";
-  cin >> a;
+  cout << message;
+  cin >> numberToRead;
 
-  return a;
-}
-int readsecondnumber() {
-  int b;
-
-  cout << "Please enter the top: ";
-  cin >> b;
-
-  return b;
+  return numberToRead;
 }
 
 void forloop(int N, int L) {
-  cout << "Range printed using for statement:\n";
+  cout << "Range printed using FOR statement:\n";
 
   for (int c = N; c >= L; c--) {
     cout << c << endl;
@@ -31,7 +22,7 @@ void forloop(int N, int L) {
 
 void whileloop(int N, int L) {
   int n = N + 1;
-  cout << "Range printed using while statement:\n";
+  cout << "Range printed using WHILE statement:\n";
 
   while (L < n) {
     n--;
@@ -41,7 +32,7 @@ void whileloop(int N, int L) {
 
 void dowhileloop(int N, int L) {
   int n = N + 1;
-  cout << "Range printed using Do While statement:\n";
+  cout << "Range printed using DO WHILE statement:\n";
 
   do {
     n--;
@@ -50,12 +41,12 @@ void dowhileloop(int N, int L) {
 }
 
 int main() {
-  int N = readnumber();
-  int L = readsecondnumber();
+  int max = ReadAnNumber("Enter the max: ");
+  int min = ReadAnNumber("Enter the min: ");
 
-  forloop(N, L);
-  whileloop(N, L);
-  dowhileloop(N, L);
+  forloop(max, min);
+  whileloop(max, min);
+  dowhileloop(max, min);
 
   return 0;
 }

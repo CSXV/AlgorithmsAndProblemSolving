@@ -1,8 +1,7 @@
 #include <iostream>
-#include <ostream>
 using namespace std;
 
-// Print the sum of odd numbers in an number, with three solutions.
+// Print the sum of even numbers in an number, with three solutions.
 
 enum enOddEven { odd = 1, even = 2 };
 
@@ -29,7 +28,8 @@ int forloop(int N) {
   cout << "\nThe sum of even numbers using (FOR) statement:\n";
 
   for (int c = 1; c <= N; c++) {            // we will use (<=) with (=).
-    if (cecknumber(c) == enOddEven::even) { // IF C=02 == 02 sum += c;
+    if (cecknumber(c) == enOddEven::even) { // IF C=02 == 02
+      sum += c;
     }
   }
 
